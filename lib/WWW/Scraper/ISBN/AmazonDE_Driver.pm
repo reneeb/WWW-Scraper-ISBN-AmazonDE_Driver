@@ -20,11 +20,11 @@ WWW::Scraper::ISBN::AmazonDE_Driver - Search driver for the (DE) Amazon online c
 
 =head1 VERSION
 
-Version 0.044
+Version 0.2
 
 =cut
 
-our $VERSION = '0.1';
+our $VERSION = '0.2';
 
 =head1 SYNOPSIS
 
@@ -190,7 +190,7 @@ L<http://search.cpan.org/dist/WWW::Scraper::ISBN::AmazonDE_Driver>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 Renee Baecker, all rights reserved.
+Copyright 2007 - 2010 Renee Baecker, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of Artistic License 2.0.

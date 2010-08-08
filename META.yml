@@ -1,6 +1,6 @@
 ---
 name: WWW-Scraper-ISBN-AmazonDE_Driver
-version: 0.1
+version: 0.2
 author:
   - 'Renee Baecker <module@renee-baecker.de>'
 abstract: Search driver for the (DE) Amazon online catalog.
@@ -13,6 +13,7 @@ requires:
   WWW::Scraper::ISBN: 0
   WWW::Scraper::ISBN::Driver: 0
 build_requires:
+  Test::CheckManifest: 1.22
   Test::More: 0
   Web::Scraper 0.31
   WWW::Mechanize: 0
@@ -21,8 +22,9 @@ build_requires:
 provides:
   WWW::Scraper::ISBN::AmazonDE_Driver:
     file: lib/WWW/Scraper/ISBN/AmazonDE_Driver.pm
-    version: 0.1
+    version: 0.2
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2
+

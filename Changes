@@ -1,5 +1,8 @@
 Revision history for WWW::Scraper::ISBN::AmazonDE_Driver
 
+0.2     Sun 08 Aug 2010
+        + request the site for the ISBN directly
+
 0.1     Sun 22 Nov 2009
         + fix some bugs in the tests
         + Amazon.de has changed the layout of the pages
