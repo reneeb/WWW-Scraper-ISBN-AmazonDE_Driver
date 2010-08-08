@@ -1,0 +1,18 @@
+Makefile.PL
+Changes
+MANIFEST
+META.yml # Will be created by "make dist"
+README
+
+lib/WWW/Scraper/ISBN/AmazonDE_Driver.pm
+
+t/00-load.t
+t/01_mastering_perl.t
+t/02_die_welle.t
+t/99_check_manifest.t
+t/boilerplate.t
+t/pod-coverage.t
+t/pod.t
+
+t/0-596-52724-1.txt
+t/3473580082.txt

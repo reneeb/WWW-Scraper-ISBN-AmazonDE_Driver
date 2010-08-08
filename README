@@ -1,0 +1,38 @@
+WWW::Scraper::ISBN::AmazonDE_Driver
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+    perl Build.PL
+    ./Build
+    ./Build test
+    ./Build install
+
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the perldoc command.
+
+    perldoc WWW::Scraper::ISBN::AmazonDE_Driver
+
+You can also look for information at:
+
+    Search CPAN
+        http://search.cpan.org/dist/WWW::Scraper::ISBN::AmazonDE_Driver
+
+    CPAN Request Tracker:
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=WWW::Scraper::ISBN::AmazonDE_Driver
+
+    AnnoCPAN, annotated CPAN documentation:
+        http://annocpan.org/dist/WWW::Scraper::ISBN::AmazonDE_Driver
+
+    CPAN Ratings:
+        http://cpanratings.perl.org/d/WWW::Scraper::ISBN::AmazonDE_Driver
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2007 Renee Baecker
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.

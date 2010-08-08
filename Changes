@@ -1,0 +1,30 @@
+Revision history for WWW::Scraper::ISBN::AmazonDE_Driver
+
+0.1     Sun 22 Nov 2009
+        + fix some bugs in the tests
+        + Amazon.de has changed the layout of the pages
+        + switched to Artistic License 2.0
+
+0.044   Wed 05 Nov 2008
+        - a small fix in META.yml
+        - a small fix in 02_*.t
+
+0.043   Tue 04 Nov 2008
+        + fix some bugs in the tests
+
+0.042   Thu 28 Aug 2008
+        + changed publish date of 'Die Welle' due to a new edition
+
+0.041   Wed 14 May 2008
+        + new upload due to changes on an internal tool
+
+0.04    Tue 13 May 2008
+        + some changes due to changes on Amazon.de
+
+0.02    Tue 18 Sep 2007
+        + Replaced RegEx by Web::Scraper
+        + added some prereqs to Build.PL
+        - bugfix: handle some more titles
+        
+0.01    Sun 12 Aug 2007
+        First version, released on an unsuspecting world.
