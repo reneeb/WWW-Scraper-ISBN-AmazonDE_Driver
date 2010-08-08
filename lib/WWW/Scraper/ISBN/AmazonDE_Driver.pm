@@ -20,11 +20,11 @@ WWW::Scraper::ISBN::AmazonDE_Driver - Search driver for the (DE) Amazon online c
 
 =head1 VERSION
 
-Version 0.2
+Version 0.21
 
 =cut
 
-our $VERSION = '0.2';
+our $VERSION = '0.21';
 
 =head1 SYNOPSIS
 
@@ -182,7 +182,7 @@ L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=WWW::Scraper::ISBN::AmazonDE_Driver>
 
 =item * Search CPAN
 
-L<http://search.cpan.org/dist/WWW::Scraper::ISBN::AmazonDE_Driver>
+L<http://search.cpan.org/dist/WWW-Scraper-ISBN-AmazonDE_Driver>
 
 =back
 
