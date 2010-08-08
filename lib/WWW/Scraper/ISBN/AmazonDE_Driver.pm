@@ -10,6 +10,7 @@ use Web::Scraper;
 
 use constant    AMAZON => 'http://www.amazon.de/';
 use constant    SEARCH => 'http://www.amazon.de/';
+use constant    DIRECT => 'http://www.amazon.de/gp/product/';
 
 our $DEBUG = $ENV{ISBN_DRIVER_DEBUG};
 
@@ -47,27 +48,36 @@ sub search {
     $self->book(undef);
 
     my $mechanize = WWW::Mechanize->new();
-    $mechanize->get( SEARCH );
-    return    $self->handler('Error loading amazon.de form web page (unreachable?)')
-        unless($mechanize->success());
+    $mechanize->agent_alias( 'Linux Mozilla' );
 
+#    $mechanize->get( SEARCH );
+#    return    $self->handler('Error loading amazon.de form web page (unreachable?)')
+#        unless($mechanize->success());
+#
     my ($index,$input) = (0,0);
 
-    $mechanize->form_name('site-search')
-        or return $self->handler('Error parsing amazon.de form');
+#    $mechanize->form_name('site-search')
+#        or return $self->handler('Error parsing amazon.de form');
 
-    my $keyword ='search-alias=stripbooks';
-    $mechanize->set_fields( 
-        'field-keywords' => $isbn, 
-        'url'            => $keyword 
-    );
-    $mechanize->submit();
+#    my $keyword ='search-alias=stripbooks';
+#    $mechanize->set_fields( 
+#        'field-keywords' => $isbn, 
+#        'url'            => $keyword 
+#    );
+#    $mechanize->submit();
 
-    return    $self->handler('Error about form submission (form changed?)') 
-        unless($mechanize->success());
+#    return    $self->handler('Error about form submission (form changed?)') 
+#        unless($mechanize->success());
+
+    (my $norm_isbn = $isbn) =~ s/[^0-9]//g;
+    my $url = DIRECT . $norm_isbn;
+    $mechanize->get( $url );
+
+    return $self->handler( "No success when trying to get $url" )
+        unless $mechanize->success;
 
     my $content = $mechanize->content();
-    
+
     #$DEBUG and warn $content;
     
     my $scraper = scraper {

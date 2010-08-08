@@ -10,7 +10,8 @@ WriteMakefile(
         'Web::Scraper'               => 0.13,
         'WWW::Scraper::ISBN::Driver' => 0.17,
         'WWW::Scraper::ISBN'         => 0.24,
-                         }, # e.g., Module::Name => 1.1
+        'Test::CheckManifest'        => 1.22,
+    }, # e.g., Module::Name => 1.1
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM  => 'lib/WWW/Scraper/ISBN/AmazonDE_Driver.pm', # retrieve abstract from module
        AUTHOR         => 'Renee Baecker <module@renee-baecker.de>') : ()),
