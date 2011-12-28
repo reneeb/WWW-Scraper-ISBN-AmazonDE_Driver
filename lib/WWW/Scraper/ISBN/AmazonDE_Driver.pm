@@ -82,7 +82,7 @@ sub search {
     
     my $scraper = scraper {
         process "title"                    , title       => 'TEXT';
-        process "meta[name='description']" , content     => '@content';
+        process "meta[name=\"description\"]" , content     => '@content';
         process 'script'                   , 'scripts[]' => sub { 
                 my $script = join '', @{$_->content_array_ref};
                 $script =~ /registerImage\("original_image"/ ? $script : ();
@@ -122,8 +122,13 @@ sub search {
 #                  #\s*(?:(?:English\sBooks?)|Bücher|B&amp;uuml;cher|B&uuml;cher).*
 #    #$data->{title} =~ s!\(.*?\)$!!;
 
-     my @tmp_info = split /:/, $data->{content};
-     @{ $data }{ qw/title author/ } = map{ s/^\s*//; $_ }@tmp_info[0,-2];
+     my @tmp_info = map{ s{\A\s*}{}; $_ }split /:/, $data->{content};
+     @{ $data }{ qw/title author/ } = @tmp_info[0,-2];
+
+     if ( $data->{author} =~ /\A\d+/ ) {
+         $data->{author} = $tmp_info[1];
+     }
+
      #my @tmp_info = split /:/, $data->{content};
      #@{ $data }{ qw/title author/ } = map{ s/^\s*//; $_ }@tmp_info[0,-3];
 
