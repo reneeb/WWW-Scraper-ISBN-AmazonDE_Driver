@@ -14,17 +14,15 @@ use constant    DIRECT => 'http://www.amazon.de/gp/product/';
 
 our $DEBUG = $ENV{ISBN_DRIVER_DEBUG};
 
-=head1 NAME
-
-WWW::Scraper::ISBN::AmazonDE_Driver - Search driver for the (DE) Amazon online catalog.
+# ABSTRACT: Search driver for the (DE) Amazon online catalog.
 
 =head1 VERSION
 
-Version 0.21
+Version 0.22
 
 =cut
 
-our $VERSION = '0.21';
+our $VERSION = '0.22';
 
 =head1 SYNOPSIS
 
@@ -195,7 +193,7 @@ L<http://search.cpan.org/dist/WWW-Scraper-ISBN-AmazonDE_Driver>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 - 2010 Renee Baecker, all rights reserved.
+Copyright 2007 - 2011 Renee Baecker, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of Artistic License 2.0.

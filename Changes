@@ -1,5 +1,8 @@
 Revision history for WWW::Scraper::ISBN::AmazonDE_Driver
 
+0.22    Wed 28 Dec 2011
+        + description meta tag changed for some books
+
 0.21    Sun 08 Aug 2010
         + adopt README
         + adopt License
