@@ -23,3 +23,4 @@ is( $book->{title}, 'Die Welle' );
 is( $book->{author}, 'Morton Rhue, Hans-Georg Noack' );
 is( $book->{publisher}, 'Ravensburger Buchverlag' );
 like( $book->{pubdate}, qr/(?:$regex) 20\d\d/ );
+
