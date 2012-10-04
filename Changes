@@ -1,5 +1,14 @@
 Revision history for WWW::Scraper::ISBN::AmazonDE_Driver
 
+0.25    Thu 04 Oct 2012
+        + fix regex in t/02_die_welle.t
+
+0.24    Wed 03 Oct 2012
+        + minor fix in t/02_die_welle.t
+
+0.23    Fri 17 Feb 2012
+        + for some books the format of title and author changed
+
 0.22    Wed 28 Dec 2011
         + description meta tag changed for some books
 

@@ -20,7 +20,7 @@ my @months = qw(Januar Februar März April Mai Juni Juli August September Oktobe
 my $regex = join '|', @months;
 
 is( $book->{title}, 'Die Welle' );
-is( $book->{author}, 'Morton Rhue, Hans-Georg Noack' );
+like( $book->{author}, qr/Morton Rhue,\s*Hans-Georg Noack/ );
 is( $book->{publisher}, 'Ravensburger Buchverlag' );
-like( $book->{pubdate}, qr/(?:$regex) 20\d\d/ );
+like( $book->{pubdate}, qr/(?:$regex) (?:19|20)\d\d/ );
 

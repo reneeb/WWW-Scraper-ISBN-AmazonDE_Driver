@@ -16,13 +16,7 @@ our $DEBUG = $ENV{ISBN_DRIVER_DEBUG};
 
 # ABSTRACT: Search driver for the (DE) Amazon online catalog.
 
-=head1 VERSION
-
-Version 0.22
-
-=cut
-
-our $VERSION = '0.22';
+our $VERSION = '0.25';
 
 =head1 SYNOPSIS
 
@@ -124,7 +118,8 @@ sub search {
      @{ $data }{ qw/title author/ } = @tmp_info[0,-2];
 
      if ( $data->{author} =~ /\A\d+/ ) {
-         $data->{author} = $tmp_info[1];
+         my ($index) = grep{ $tmp_info[$_] eq $data->{author} } reverse ( 0 .. $#tmp_info );
+         $data->{author} = $tmp_info[$index-1];
      }
 
      #my @tmp_info = split /:/, $data->{content};
