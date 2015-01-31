@@ -14,9 +14,21 @@ use constant    DIRECT => 'http://www.amazon.de/gp/product/';
 
 our $DEBUG = $ENV{ISBN_DRIVER_DEBUG};
 
-# ABSTRACT: Search driver for the (DE) Amazon online catalog.
+# ABSTRACT: [DEPRECATED] Search driver for the (DE) Amazon online catalog.
 
 our $VERSION = '0.25';
+
+=head1 WHY DEPRECATED?
+
+I don't use the module anymore and Amazon seems to change the HTML every now
+and then. That makes it hard to maintain the module.
+
+=head1 ADOPT THE MODULE
+
+If you're interested to adopt the module, then go ahead. I will give (co-)maintainership
+to the L<ADOPTME|https://metacpan.org/author/ADOPTME> user. I can transfer the
+L<Github repository|https://github.com/reneeb/WWW-Scraper-ISBN-AmazonDE_Driver> to you,
+if you send me a mail with your Github-ID.
 
 =head1 SYNOPSIS
 
