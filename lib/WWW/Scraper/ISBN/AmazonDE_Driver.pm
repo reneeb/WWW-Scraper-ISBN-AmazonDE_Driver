@@ -16,7 +16,7 @@ our $DEBUG = $ENV{ISBN_DRIVER_DEBUG};
 
 # ABSTRACT: [DEPRECATED] Search driver for the (DE) Amazon online catalog.
 
-our $VERSION = '0.26';
+our $VERSION = '0.27';
 
 =head1 WHY DEPRECATED?
 
