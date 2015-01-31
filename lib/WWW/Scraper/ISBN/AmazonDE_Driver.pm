@@ -123,7 +123,7 @@ sub search {
 #                  (.+?)
 #                  \s*:\s*([^:]+)\s*:
 #                  /x);
-#                  #\s*(?:(?:English\sBooks?)|Bücher|B&amp;uuml;cher|B&uuml;cher).*
+#                  #\s*(?:(?:English\sBooks?)|BÃ¼cher|B&amp;uuml;cher|B&uuml;cher).*
 #    #$data->{title} =~ s!\(.*?\)$!!;
 
      my @tmp_info = map{ s{\A\s*}{}; $_ }split /:/, $data->{content};
